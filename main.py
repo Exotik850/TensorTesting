@@ -75,3 +75,8 @@ if __name__ == '__main__':
     z_plot_pred = np.reshape(z_plot_pred, (100, 100))
     plt.contour(x_plot_contour, y_plot_contour, z_plot_pred, levels=[0.5], colors='r')
     plt.show()
+
+    # save model
+    model.save('circle_classifier.h5')
+    # load model
+
